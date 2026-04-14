@@ -1,6 +1,6 @@
 console.log("Связь установлена! Скрипт работает.");
 const greetButton = document.getElementById('greetButton');
-const nameInput = document.getElementById('userName');
+const nameInput = document.getElementById('nameInput'); // Было userName
 const welcomeMessage = document.getElementById('welcomeMessage');
 
 greetButton.addEventListener('click', () => {
