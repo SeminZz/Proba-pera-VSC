@@ -22,19 +22,27 @@ body {
 
 /* Стильная кнопка */
 button {
-    background-color: #007bff;
+    background-color: #007bff; /* Основной синий */
     color: white;
     border: none;
-    padding: 13px 25px;
-    border-radius: 8px;
+    padding: 12px 25px;
+    border-radius: 8px; /* Скругление как у верхней кнопки */
     cursor: pointer;
     font-size: 16px;
-    transition: 0.3s; /* Плавность при наведении */
+    font-weight: 600;
+    transition: all 0.3s ease;
+    
+    /* Эти свойства помогут кнопке "Добавить" не растягиваться странно */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px; /* Одинаковая минимальная ширина */
 }
 
 button:hover {
     background-color: #0056b3;
-    transform: scale(1.05); /* Кнопка чуть увеличится */
+    transform: translateY(-2px); /* Легкий подъем вместо простого увеличения */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
 }
 
 /* Поле ввода */
@@ -93,8 +101,17 @@ input:focus {
     border-color: #28a745;
 }
 .input-group {
-    margin-bottom: 30px; /* Отступ снизу от блока ввода */
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column; /* Выстраивает элементы в столбик */
+    align-items: center;    /* Центрирует поле и кнопку */
+    gap: 12px;              /* Расстояние между полем и кнопкой */
+    margin-bottom: 30px;
+    width: 100%;            /* Чтобы группа занимала всю ширину контейнера */
+}
+
+.input-group input, 
+.input-group button {
+    width: 100%;            /* Делаем их одинаковой ширины */
+    max-width: 300px;       /* Но не шире 300px, чтобы не растягивались на весь экран */
+    box-sizing: border-box; /* Чтобы отступы не вылезали за края */
 }
