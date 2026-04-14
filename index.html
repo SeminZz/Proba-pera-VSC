@@ -12,11 +12,13 @@
         <input type="text" id="nameInput" placeholder="Введите имя">
         <button id="greetButton">Подтвердить</button>
         <p id="welcomeMessage"></p>
-
-        <hr> <div class="input-group">
-            <input type="text" id="goalInput" placeholder="Какая следующая цель?">
-            <button id="addGoalButton">Добавить в список</button>
-        </div>
+<hr> 
+<form class="input-group" id="goalForm">
+    <input type="text" id="goalInput" placeholder="Какая следующая цель?">
+    <button type="submit" id="addGoalButton">Добавить в список</button>
+    <button type="button" id="clearGoalsButton" class="btn-clear">Очистить список</button>
+</form>
+</div>
 
         <h3>Мои цели:</h3>
         

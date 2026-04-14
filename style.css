@@ -115,3 +115,14 @@ input:focus {
     max-width: 300px;       /* Но не шире 300px, чтобы не растягивались на весь экран */
     box-sizing: border-box; /* Чтобы отступы не вылезали за края */
 }
+.btn-clear {
+    background-color: #6c757d; /* Серый цвет по умолчанию */
+    margin-top: 5px; /* Небольшой отступ от кнопки добавления */
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.btn-clear:hover {
+    background-color: #dc3545 !important; /* Красный при наведении */
+    opacity: 1;
+}

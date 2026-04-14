@@ -42,3 +42,17 @@ addGoalButton.addEventListener('click', () => {
 
 // 3. ЗАПУСК: Как только скрипт загрузился, проверяем память
 loadGoals();
+const clearGoalsButton = document.getElementById('clearGoalsButton');
+
+clearGoalsButton.addEventListener('click', () => {
+    if (confirm('Точно удалить все цели?')) { // Спрашиваем подтверждение
+        // 1. Очищаем память браузера
+        localStorage.removeItem('myGoals');
+        
+        // 2. Очищаем экран (удаляем все дочерние элементы контейнера)
+        goalsContainer.innerHTML = '';
+        
+        // 3. (Опционально) Если хочешь вернуть дефолтные цели, можно их прописать тут
+        // Но сейчас мы просто делаем чистый лист.
+    }
+});
