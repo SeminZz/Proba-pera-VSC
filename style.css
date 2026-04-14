@@ -81,3 +81,20 @@ input:focus {
     transform: translateY(-3px); /* Слегка подпрыгивает вверх */
     box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
 }
+/* Вторая карточка (Git) будет оранжевой */
+.goal-item:nth-child(2):hover {
+    background-color: #f34f29; /* Цвет Git */
+    border-color: #f34f29;
+}
+
+/* Третья карточка (Деплой) будет зеленой */
+.goal-item:nth-child(3):hover {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.input-group {
+    margin-bottom: 30px; /* Отступ снизу от блока ввода */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

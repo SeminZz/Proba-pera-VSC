@@ -8,19 +8,26 @@
 <body>
     <div class="container">
         <h1>Добро пожаловать</h1>
+        
         <input type="text" id="nameInput" placeholder="Введите имя">
         <button id="greetButton">Подтвердить</button>
         <p id="welcomeMessage"></p>
-        
+
+        <hr> <div class="input-group">
+            <input type="text" id="goalInput" placeholder="Какая следующая цель?">
+            <button id="addGoalButton">Добавить в список</button>
+        </div>
+
         <h3>Мои цели:</h3>
-        <div class="goals-container">
-    <div class="goal-item">Выучить базу HTML/CSS</div>
-    <div class="goal-item">Разобраться с Git</div>
-    <div class="goal-item">Сделать первый деплой</div>
-    <div class="goal-item">Стать профи!</div>
-</div>
+        
+        <div class="goals-container" id="goalsContainer">
+            <div class="goal-item">📚 Выучить базу HTML/CSS</div>
+            <div class="goal-item">🐙 Разобраться с Git</div>
+            <div class="goal-item">🚀 Сделать первый деплой</div>
+            <div class="goal-item">💻 Стать профи!</div>
+        </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
