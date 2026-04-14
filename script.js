@@ -6,7 +6,7 @@ const welcomeMessage = document.getElementById('welcomeMessage');
 greetButton.addEventListener('click', () => {
     const name = nameInput.value;
     if (name) {
-        welcomeMessage.textContent = `Шалом, ${name}! Мы рады видеть тебя, скинь денег на карту по номеру +7 (978) 881-69-28`;
+        welcomeMessage.textContent = `Шалом, ${name}! Мы рады видеть тебя, скинь денег на карту по номеру... Хотя ты же знаешь номер!`;
         nameInput.value = ''; // Очистить поле после нажатия
     } else {
         alert('Пожалуйста, введи свое имя');
