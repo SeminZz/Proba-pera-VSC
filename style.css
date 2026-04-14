@@ -50,3 +50,34 @@ input {
 input:focus {
     border-color: #007bff;
 }
+/* Контейнер для всех целей */
+.goals-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между "кнопками" */
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* Сами "псевдо-кнопки" */
+.goal-item {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 15px 25px;
+    border-radius: 12px;
+    width: 80%; /* Чтобы они были одинаковой ширины */
+    max-width: 400px;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Плавная анимация */
+    cursor: default; /* Показывает, что это не обычная ссылка, а просто блок */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Эффект при наведении */
+.goal-item:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-3px); /* Слегка подпрыгивает вверх */
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+}
