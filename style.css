@@ -1,56 +1,52 @@
-/* Это стили для всего сайта */
+/* Общие настройки шрифта и фона */
 body {
-    background-color: #f4f4f9; /* Светло-серый фон */
-    font-family: Arial, sans-serif; /* Приятный шрифт без засечек */
-    color: #333; /* Темно-серый цвет текста */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding: 50px;
+    color: #333;
 }
 
-/* Стили для заголовка */
-h1 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-}
-
-/* Стили для списка целей */
-ul {
+/* Красивая карточка для контента */
+.container {
     background: white;
-    padding: 20px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Легкая тень */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
 }
 
-li {
-    margin: 10px 0;
-    font-size: 18px;
-}
-.contact-form {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 350px;
-}
-
-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#greetButton {
-    background-color: #2ecc71;
+/* Стильная кнопка */
+button {
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.3s; /* Плавность при наведении */
 }
 
-#greetButton:hover {
-    background-color: #27ae60;
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Кнопка чуть увеличится */
+}
+
+/* Поле ввода */
+input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #007bff;
 }
